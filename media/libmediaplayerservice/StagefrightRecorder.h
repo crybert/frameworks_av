@@ -115,6 +115,10 @@ private:
     bool mIsMetaDataStoredInVideoBuffers;
     MediaProfiles *mEncoderProfiles;
 
+#ifdef SAMSUNG_CAMERA_QCOM
+    bool mIsFrontCamera;
+#endif
+
     bool mStarted;
     // Needed when GLFrames are encoded.
     // An <ISurfaceTexture> pointer
